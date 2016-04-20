@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C205FE401CBF9F5A008A6CEB /* LQHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C205FE1E1CBF9F5A008A6CEB /* LQHomeViewController.m */; };
 		C205FE411CBF9F5A008A6CEB /* LQJoketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C205FE231CBF9F5A008A6CEB /* LQJoketViewController.m */; };
 		C205FE421CBF9F5A008A6CEB /* LQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C205FE2A1CBF9F5A008A6CEB /* LQMainViewController.m */; };
 		C205FE431CBF9F5A008A6CEB /* LQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C205FE2C1CBF9F5A008A6CEB /* LQNavigationController.m */; };
@@ -15,6 +14,11 @@
 		C205FE451CBF9F5A008A6CEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C205FE321CBF9F5A008A6CEB /* main.m */; };
 		C205FE461CBF9F5A008A6CEB /* LQMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C205FE371CBF9F5A008A6CEB /* LQMineViewController.m */; };
 		C205FE471CBF9F5A008A6CEB /* LQVedioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C205FE3D1CBF9F5A008A6CEB /* LQVedioViewController.m */; };
+		C22569DD1CC7B062007D0092 /* LQHomeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C22569DC1CC7B062007D0092 /* LQHomeListModel.m */; };
+		C22569E11CC7B0A1007D0092 /* LQHomeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C22569DF1CC7B0A1007D0092 /* LQHomeListTableViewCell.m */; };
+		C22569E21CC7B0A1007D0092 /* LQHomeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22569E01CC7B0A1007D0092 /* LQHomeListTableViewCell.xib */; };
+		C22569E81CC7BAB8007D0092 /* LQHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C22569E61CC7BAB8007D0092 /* LQHomeViewController.m */; };
+		C22569E91CC7BAB8007D0092 /* LQHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22569E71CC7BAB8007D0092 /* LQHomeViewController.xib */; };
 		C258CB501CC4702D00F83ABB /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C258CB4C1CC4702D00F83ABB /* MBProgressHUD.bundle */; };
 		C258CB511CC4702D00F83ABB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C258CB4E1CC4702D00F83ABB /* MBProgressHUD.m */; };
 		C259A8271CC1EB6800E2891E /* LQNetWoringRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C259A8261CC1EB6800E2891E /* LQNetWoringRequestManager.m */; };
@@ -61,8 +65,6 @@
 		B89420EDD9102215E646CC2D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C205FE171CBF8873008A6CEB /* Spice.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spice.pch; sourceTree = "<group>"; };
 		C205FE191CBF8F9B008A6CEB /* URLSpice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLSpice.h; sourceTree = "<group>"; };
-		C205FE1D1CBF9F5A008A6CEB /* LQHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQHomeViewController.h; sourceTree = "<group>"; };
-		C205FE1E1CBF9F5A008A6CEB /* LQHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQHomeViewController.m; sourceTree = "<group>"; };
 		C205FE231CBF9F5A008A6CEB /* LQJoketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQJoketViewController.m; sourceTree = "<group>"; };
 		C205FE241CBF9F5A008A6CEB /* LQJokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQJokeViewController.h; sourceTree = "<group>"; };
 		C205FE291CBF9F5A008A6CEB /* LQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMainViewController.h; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 		C205FE371CBF9F5A008A6CEB /* LQMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMineViewController.m; sourceTree = "<group>"; };
 		C205FE3C1CBF9F5A008A6CEB /* LQVedioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQVedioViewController.h; sourceTree = "<group>"; };
 		C205FE3D1CBF9F5A008A6CEB /* LQVedioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQVedioViewController.m; sourceTree = "<group>"; };
+		C22569DB1CC7B062007D0092 /* LQHomeListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LQHomeListModel.h; path = Spice/Classes/Home/Controller/LQHomeListModel.h; sourceTree = SOURCE_ROOT; };
+		C22569DC1CC7B062007D0092 /* LQHomeListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LQHomeListModel.m; path = Spice/Classes/Home/Controller/LQHomeListModel.m; sourceTree = SOURCE_ROOT; };
+		C22569DE1CC7B0A1007D0092 /* LQHomeListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LQHomeListTableViewCell.h; path = Spice/Classes/Home/Controller/LQHomeListTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		C22569DF1CC7B0A1007D0092 /* LQHomeListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LQHomeListTableViewCell.m; path = Spice/Classes/Home/Controller/LQHomeListTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		C22569E01CC7B0A1007D0092 /* LQHomeListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LQHomeListTableViewCell.xib; path = Spice/Classes/Home/Controller/LQHomeListTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		C22569E51CC7BAB8007D0092 /* LQHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQHomeViewController.h; sourceTree = "<group>"; };
+		C22569E61CC7BAB8007D0092 /* LQHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQHomeViewController.m; sourceTree = "<group>"; };
+		C22569E71CC7BAB8007D0092 /* LQHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQHomeViewController.xib; sourceTree = "<group>"; };
 		C258CB4A1CC4702D00F83ABB /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		C258CB4B1CC4702D00F83ABB /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		C258CB4C1CC4702D00F83ABB /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -193,8 +203,9 @@
 		C205FE1C1CBF9F5A008A6CEB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C205FE1D1CBF9F5A008A6CEB /* LQHomeViewController.h */,
-				C205FE1E1CBF9F5A008A6CEB /* LQHomeViewController.m */,
+				C22569E51CC7BAB8007D0092 /* LQHomeViewController.h */,
+				C22569E61CC7BAB8007D0092 /* LQHomeViewController.m */,
+				C22569E71CC7BAB8007D0092 /* LQHomeViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -202,6 +213,8 @@
 		C205FE1F1CBF9F5A008A6CEB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C22569DB1CC7B062007D0092 /* LQHomeListModel.h */,
+				C22569DC1CC7B062007D0092 /* LQHomeListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +222,9 @@
 		C205FE201CBF9F5A008A6CEB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C22569DE1CC7B0A1007D0092 /* LQHomeListTableViewCell.h */,
+				C22569DF1CC7B0A1007D0092 /* LQHomeListTableViewCell.m */,
+				C22569E01CC7B0A1007D0092 /* LQHomeListTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -588,8 +604,10 @@
 				C25BD86E1CC64CFD002A9477 /* message@2x.png in Resources */,
 				C25BD8761CC64CFD002A9477 /* WMPlayer.gif in Resources */,
 				C25BD8581CC64CB2002A9477 /* WMPlayer.bundle in Resources */,
+				C22569E91CC7BAB8007D0092 /* LQHomeViewController.xib in Resources */,
 				C25BD8701CC64CFD002A9477 /* play.png in Resources */,
 				C258CB501CC4702D00F83ABB /* MBProgressHUD.bundle in Resources */,
+				C22569E21CC7B0A1007D0092 /* LQHomeListTableViewCell.xib in Resources */,
 				C289C80C1CC73039000B56DB /* MJRefresh.bundle in Resources */,
 				C25BD8711CC64CFD002A9477 /* playcount.png in Resources */,
 			);
@@ -663,14 +681,16 @@
 				C289C8111CC73039000B56DB /* UIScrollView+MJExtension.m in Sources */,
 				C25BD8591CC64CB2002A9477 /* WMPlayer.m in Sources */,
 				C289C8101CC73039000B56DB /* MJRefreshHeaderView.m in Sources */,
-				C205FE401CBF9F5A008A6CEB /* LQHomeViewController.m in Sources */,
 				C205FE411CBF9F5A008A6CEB /* LQJoketViewController.m in Sources */,
 				C29D06321CC09A570018D347 /* LQVedioCell.m in Sources */,
+				C22569E11CC7B0A1007D0092 /* LQHomeListTableViewCell.m in Sources */,
+				C22569E81CC7BAB8007D0092 /* LQHomeViewController.m in Sources */,
 				C289C80F1CC73039000B56DB /* MJRefreshFooterView.m in Sources */,
 				C205FE421CBF9F5A008A6CEB /* LQMainViewController.m in Sources */,
 				C265043B1CC6145000E5CE55 /* LQModel.m in Sources */,
 				C205FE471CBF9F5A008A6CEB /* LQVedioViewController.m in Sources */,
 				C289C8121CC73039000B56DB /* UIScrollView+MJRefresh.m in Sources */,
+				C22569DD1CC7B062007D0092 /* LQHomeListModel.m in Sources */,
 				C258CB511CC4702D00F83ABB /* MBProgressHUD.m in Sources */,
 				C29D062F1CC095970018D347 /* LQVedion.m in Sources */,
 				C205FE451CBF9F5A008A6CEB /* main.m in Sources */,
