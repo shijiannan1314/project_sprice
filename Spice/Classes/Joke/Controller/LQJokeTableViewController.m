@@ -24,7 +24,8 @@
 @property(nonatomic,assign)int num;
 @property(nonatomic,assign)CGFloat currentScale;
 @property(nonatomic,strong)UIWindow *window;
-
+@property(nonatomic,strong)NSString *string;
+//@property(nonatomic,strong)UIWindow window1;
 @end
 
 @implementation LQJokeTableViewController
@@ -69,6 +70,7 @@
         [self.tableView  footerEndRefreshing];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
     }];
 }
 -(void)AFHTTP{
@@ -124,38 +126,44 @@
     [cell.headImage sd_setImageWithURL:[NSURL URLWithString:model.avatar]];
     cell.MainLabel.text = model.content;
     [cell.MainImage sd_setImageWithURL:[NSURL URLWithString:[[model.imagelist objectAtIndex:0] objectForKey:@"large"]]];
+    
+//    self.string  = [[model.imagelist objectAtIndex:0]objectForKey:@"large"];
     cell.MainImage.userInteractionEnabled =YES;
 //    if (isHave == YES) {
         UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickimage:)];
         [cell.MainImage addGestureRecognizer:tap];
 //        isHave = NO;
 //    }
-    
+//    [UIApplication sharedApplication]keyWindow
     
     return cell;
 }
--(void)clickimage:(UITapGestureRecognizer*)tap{
+-(void)clickimage:(UIGestureRecognizer *)ges{
+//    UIView *subview =[[UIView alloc]initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
+//    UIWindow *window =[UIApplication sharedApplication].keyWindow;
+//    if (!window) {
+//        self.window1 = [UIApplication sharedApplication].keyWindow;
+//    }
+    UIImageView *view = (UIImageView *)ges.view;
+//    view.frame = CGRectMake(0, 60, self.view.frame.size.width, self.view.frame.size.height-120);
+    UITableViewCell *cell = (UITableViewCell *)[[view superview] superview];
+    NSIndexPath *index = [self.tableView indexPathForCell:cell];
+    NSString *str = [[[((LQModel *)[self.sarry objectAtIndex:index.row]) imagelist] objectAtIndex:0] objectForKey:@"large"];
+//    [self.window1 addSubview:view];
+//    UIGestureRecognizer *gges =[[UIGestureRecognizer alloc]initWithTarget:self action:@selector(fanhui)];
+//    [view addGestureRecognizer:gges];
+//    LQModel *model = self.sarry[indextpath.row];
+////    self.string  = [[model.imagelist objectAtIndex:0]objectForKey:@"large"];
     LQImageCoViewController *lqimagec =[[LQImageCoViewController alloc]init];
+    lqimagec.str = str;
     [self presentViewController:lqimagec animated:nil completion:^{
+ 
+        
         
     }];
-//    if (isHave == NO) {
-//        UIView *mainview =[[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-//        tap.view.frame = CGRectMake(0, 60, self.view.frame.size.width, self.view.frame.size.height-120);
-//        mainview.backgroundColor =[UIColor blackColor];
-//        mainview.alpha = 0.8;
-////        self.window =[UIApplication sharedApplication].keyWindow;
-////        [_window addSubview:mainview];
-//        
-////        [_window removeFromSuperview];
-////        [_window addSubview:tap.view];
-//        UIPinchGestureRecognizer *gesture= [[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(scaleimage:)];
-//        [tap.view addGestureRecognizer:gesture];
-//        isHave = YES;
-//        UITapGestureRecognizer *taprelese= [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(backToCell)];
-//        [_window addGestureRecognizer:taprelese];
-//    }
 
+}
+-(void)fanhui{
     
 }
 
@@ -164,30 +172,7 @@
 
     
 }
-//-(void)scaleimage:(id)sender{
-//
-//        
-//        [self.view bringSubviewToFront:[(UIPinchGestureRecognizer*)sender view]];
-//        
-//        //当手指离开屏幕时,将lastscale设置为1.0
-//        
-//        if([(UIPinchGestureRecognizer*)sender state] == UIGestureRecognizerStateEnded) {
-//            
-//            self.currentScale = 1.0;
-//            
-//            return;
-//        }
-//        CGFloat scale = 1.0 - (self.currentScale - [(UIPinchGestureRecognizer*)sender scale]);
-//        
-//        CGAffineTransform currentTransform = [(UIPinchGestureRecognizer*)sender view].transform;
-//        
-//        CGAffineTransform newTransform = CGAffineTransformScale(currentTransform, scale, scale);
-//        
-//        [[(UIPinchGestureRecognizer*)sender view] setTransform:newTransform];
-//        
-//        self.currentScale = [(UIPinchGestureRecognizer*)sender scale];
-//        
-//    }
+
 
 
 
@@ -199,18 +184,24 @@
     return YES;
 }
 */
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    LQModel *model = self.sarry[indexPath.row];
+//     self.string  = [[model.imagelist objectAtIndex:0]objectForKey:@"large"];
 }
-*/
+
+
+// Override to support editing the table view.
+//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if (editingStyle == UITableViewCellEditingStyleDelete) {
+//        // Delete the row from the data source
+////        LQModel *model = self.sarry[indexPath.row];
+////        self.string  = [[model.imagelist objectAtIndex:0]objectForKey:@"large"];
+//
+//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+//    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+//        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//    }   
+//}
 
 /*
 // Override to support rearranging the table view.

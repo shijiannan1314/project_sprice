@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LQImageCoViewController : UIViewController
-
+@property(nonatomic,strong)NSString *str;
 @end
